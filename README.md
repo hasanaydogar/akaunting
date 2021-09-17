@@ -39,6 +39,9 @@ php artisan install --db-name="akaunting" --db-username="root" --db-password="pa
 
 * Create sample data (optional): `php artisan sample-data:seed`
 
+
+* To run : php -S 127.0.0.1:8000
+
 ## Contributing
 
 Please, be very clear on your commit messages and pull requests, empty pull request messages may be rejected without reason.
