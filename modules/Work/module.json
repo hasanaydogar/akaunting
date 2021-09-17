@@ -1,0 +1,17 @@
+{
+    "alias": "work",
+    "icon": "fa fa-cog",
+    "version": "1.0.0",
+    "active": 1,
+    "providers": [
+        "Modules\\Work\\Providers\\Event",
+        "Modules\\Work\\Providers\\Main"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": [],
+    "reports": [],
+    "widgets": [],
+    "settings": [],
+    "extra-modules": {}
+}

@@ -93,5 +93,6 @@ _ide_helper_models.php
 /storage/debugbar/*
 .phpunit.result.cache
 modules/*
+!modules/Work
 !modules/.gitkeep
 .laravelstatsrc
