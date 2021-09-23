@@ -95,6 +95,7 @@ class Payment extends Notification
             '{company_name}',
             '{company_email}',
             '{company_tax_number}',
+            '{company_tax_address}',
             '{company_phone}',
             '{company_address}',
         ];
@@ -110,6 +111,7 @@ class Payment extends Notification
             $this->payment->company->name,
             $this->payment->company->email,
             $this->payment->company->tax_number,
+            $this->payment->company->tax_address,
             $this->payment->company->phone,
             nl2br(trim($this->payment->company->address)),
         ];

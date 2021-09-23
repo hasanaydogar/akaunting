@@ -18,6 +18,7 @@ class Customers extends Export
             'name',
             'email',
             'tax_number',
+            'tax_address',
             'phone',
             'address',
             'website',

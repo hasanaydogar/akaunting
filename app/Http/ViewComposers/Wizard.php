@@ -59,6 +59,7 @@ class Wizard
                 'form_enter' => trans('general.form.enter'),
                 'get_api_key' => trans('modules.get_api_key'),
                 'tax_number' => trans('general.tax_number'),
+                'tax_address' => trans('general.tax_address'),
                 'financial_start' => trans('settings.localisation.financial_start'),
                 'address' => trans('settings.company.address'),
                 'logo' => trans('settings.company.logo'),

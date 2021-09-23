@@ -104,6 +104,7 @@ class Version200 extends Listener
             'company.logo'                      => 'general.company_logo',
             'company.phone'                     => 'general.company_phone',
             'company.tax_number'                => 'general.company_tax_number',
+            'company.tax_address'               => 'general.company_tax_address',
             'localisation.financial_start'      => 'general.financial_start',
             'localisation.timezone'             => 'general.timezone',
             'localisation.date_format'          => 'general.date_format',

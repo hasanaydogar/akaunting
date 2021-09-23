@@ -106,6 +106,13 @@
                 </li>
                 @stack('customer_tax_number_end')
 
+                @stack('customer_tax_address_start')
+                <li class="list-group-item border-0 border-top-1">
+                    <div class="font-weight-600">{{ trans('general.tax_address') }}</div>
+                    <div><small class="long-texts" title="{{ $customer->tax_address }}">{{ $customer->tax_address }}</small></div>
+                </li>
+                @stack('customer_tax_address_end')
+
                 @stack('customer_address_start')
                 <li class="list-group-item border-0 border-top-1">
                     <div class="font-weight-600">{{ trans('general.address') }}</div>

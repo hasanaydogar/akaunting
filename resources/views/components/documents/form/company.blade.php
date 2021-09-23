@@ -26,6 +26,7 @@
                             <akaunting-company-edit company-id="{{ company_id() }}"
                             button-text="{{ trans('settings.company.edit_your_business_address') }}"
                             tax-number-text="{{ trans('general.tax_number') }}"
+                            tax-address-text="{{ trans('general.tax_address') }}"
                             :company="{{ json_encode($company) }}"
                             :company-form="{{ json_encode([
                                 'show' => true,

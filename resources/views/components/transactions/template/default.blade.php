@@ -35,6 +35,14 @@
                         </p>
                     @endif
 
+                    @if (!$hideCompanyTaxAddress)
+                        <p style="margin:0; padding:0; font-size:14px;">
+                            @if (setting('company.tax_address'))
+                                {{ trans('general.tax_address') }}: {{ setting('company.tax_address') }}
+                            @endif
+                        </p>
+                    @endif
+
                     @if (!$hideCompanyPhone)
                         <p style="margin:0; padding:0; font-size:14px;">
                             @if (setting('company.phone'))
@@ -209,6 +217,20 @@
                     @endif
                     @stack('tax_number_input_end')
 
+                    @stack('tax_address_input_start')
+                    @if (!$hideContactTaxAddress)
+                        <tr>
+                            <td style="padding-bottom:5px; padding-top:0; font-size:14px;">
+                                <p style="margin:0; padding:0; font-size:14px;">
+                                    @if ($transaction->contact->tax_address)
+                                        {{ trans('general.tax_address') }}: {{ $transaction->contact->tax_address }}
+                                    @endif
+                                </p>
+                            </td>
+                        </tr>
+                    @endif
+                    @stack('tax_address_input_end')
+
                     @stack('phone_input_start')
                     @if (!$hideContactPhone)
                         <tr>
@@ -276,7 +298,7 @@
 
         <table class="table table-flush table-hover" cellspacing="0" cellpadding="0" style="margin-bottom: 36px;">
             <thead style="background-color: #f6f9fc; -webkit-print-color-adjust: exact; font-family: Arial, sans-serif; color:#8898aa; font-size:11px;">
-                <tr class="border-bottom-1">    
+                <tr class="border-bottom-1">
                     @if (!$hideReletadDocumentNumber)
                         <th class="item text-left" style="text-align: left; text-transform: uppercase; font-family: Arial, sans-serif;">
                             <span>{{ trans_choice($textReleatedDocumentNumber, 1) }}</span>

@@ -43,6 +43,10 @@ class UpdateCompany extends Job implements ShouldUpdate
                 setting()->set('company.tax_number', $this->request->get('tax_number'));
             }
 
+            if ($this->request->has('tax_address')) {
+                setting()->set('company.tax_address', $this->request->get('tax_address'));
+            }
+
             if ($this->request->has('phone')) {
                 setting()->set('company.phone', $this->request->get('phone'));
             }

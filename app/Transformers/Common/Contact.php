@@ -21,6 +21,7 @@ class Contact extends TransformerAbstract
             'name' => $model->name,
             'email' => $model->email,
             'tax_number' => $model->tax_number,
+            'tax_address' => $model->tax_address,
             'phone' => $model->phone,
             'address' => $model->address,
             'website' => $model->website,

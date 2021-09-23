@@ -38,6 +38,7 @@ class Contact extends Model
         'email',
         'user_id',
         'tax_number',
+        'tax_address',
         'phone',
         'address',
         'city',

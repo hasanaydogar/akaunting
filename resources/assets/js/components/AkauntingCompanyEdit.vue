@@ -23,6 +23,11 @@
                             {{ taxNumberText }}: {{ company.tax_number }}
                         </th>
                     </tr>
+                    <tr v-if="company.tax_address">
+                        <th class="text-right p-0">
+                            {{ taxAddressText }}: {{ company.tax_address }}
+                        </th>
+                    </tr>
                     <tr v-if="company.phone">
                         <th class="text-right p-0">
                             {{ company.phone }}
@@ -211,6 +216,7 @@ export default {
                     this.company.name = data.name;
                     this.company.email = data.email;
                     this.company.tax_number = data.tax_number;
+                    this.company.tax_address = data.tax_address;
                     this.company.phone = data.phone;
                     this.company.address = data.address;
 

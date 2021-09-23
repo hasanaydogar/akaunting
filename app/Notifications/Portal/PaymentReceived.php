@@ -114,6 +114,7 @@ class PaymentReceived extends Notification
             '{company_name}',
             '{company_email}',
             '{company_tax_number}',
+            '{company_tax_address}',
             '{company_phone}',
             '{company_address}',
         ];
@@ -136,6 +137,7 @@ class PaymentReceived extends Notification
             $this->invoice->company->name,
             $this->invoice->company->email,
             $this->invoice->company->tax_number,
+            $this->invoice->company->tax_address,
             $this->invoice->company->phone,
             nl2br(trim($this->invoice->company->address)),
         ];

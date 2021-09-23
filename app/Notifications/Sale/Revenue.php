@@ -97,6 +97,7 @@ class Revenue extends Notification
             '{company_name}',
             '{company_email}',
             '{company_tax_number}',
+            '{company_tax_address}',
             '{company_phone}',
             '{company_address}',
         ];
@@ -114,6 +115,7 @@ class Revenue extends Notification
             $this->revenue->company->name,
             $this->revenue->company->email,
             $this->revenue->company->tax_number,
+            $this->revenue->company->tax_address,
             $this->revenue->company->phone,
             nl2br(trim($this->revenue->company->address)),
         ];

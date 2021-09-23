@@ -56,6 +56,18 @@
                         </div>
 
                         <div class="col-6">
+                            <base-input
+                                type="text"
+                                :label="translations.company.tax_address"
+                                name="tax_address"
+                                data-name="tax_address"
+                                :placeholder="translations.company.tax_address"
+                                prepend-icon="fas fa-percent"
+                                v-model="company.tax_address"
+                            />
+                        </div>
+
+                        <div class="col-6">
                             <akaunting-date
                             :title="translations.company.financial_start"
                                 data-name="financial_start"

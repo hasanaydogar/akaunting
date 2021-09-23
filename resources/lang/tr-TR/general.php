@@ -82,6 +82,7 @@ return [
     'name'                  => 'İsim',
     'email'                 => 'E-posta',
     'tax_number'            => 'Vergi Numarası',
+    'tax_address'           => 'Vergi Dairesi',
     'phone'                 => 'Telefon',
     'address'               => 'Adres',
     'website'               => 'Web Sayfası',

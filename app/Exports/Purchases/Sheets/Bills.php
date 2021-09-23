@@ -38,6 +38,7 @@ class Bills extends Export implements WithColumnFormatting
             'contact_name',
             'contact_email',
             'contact_tax_number',
+            'contact_tax_address',
             'contact_phone',
             'contact_address',
             'notes',

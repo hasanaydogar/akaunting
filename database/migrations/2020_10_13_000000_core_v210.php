@@ -34,6 +34,7 @@ class CoreV210 extends Migration
             $table->string('contact_name');
             $table->string('contact_email')->nullable();
             $table->string('contact_tax_number')->nullable();
+            $table->string('contact_tax_address')->nullable();
             $table->string('contact_phone')->nullable();
             $table->text('contact_address')->nullable();
             $table->text('notes')->nullable();

@@ -105,6 +105,13 @@
                 </li>
                 @stack('vendor_tax_number_end')
 
+                @stack('vendor_tax_address_start')
+                <li class="list-group-item border-0 border-top-1">
+                    <div class="font-weight-600">{{ trans('general.tax_address') }}</div>
+                    <div><small class="long-texts" title="{{ $vendor->tax_address }}">{{ $vendor->tax_address }}</small></div>
+                </li>
+                @stack('vendor_tax_address_end')
+
                 @stack('vendor_address_start')
                 <li class="list-group-item border-0 border-top-1">
                     <div class="font-weight-600">{{ trans('general.address') }}</div>

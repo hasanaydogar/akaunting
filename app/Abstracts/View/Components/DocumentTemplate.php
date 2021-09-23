@@ -45,6 +45,8 @@ abstract class DocumentTemplate extends Base
 
     public $hideCompanyTaxNumber;
 
+    public $hideCompanyTaxAddress;
+
     public $hideCompanyPhone;
 
     public $hideCompanyEmail;
@@ -56,6 +58,8 @@ abstract class DocumentTemplate extends Base
     public $hideContactAddress;
 
     public $hideContactTaxNumber;
+
+    public $hideContactTaxAddress;
 
     public $hideContactPhone;
 
@@ -125,8 +129,8 @@ abstract class DocumentTemplate extends Base
     public function __construct(
         $type, $document, $item = false,  $documentTemplate = '', $logo = '', $backgroundColor = '',
         bool $hideFooter = false, bool $hideCompanyLogo = false, bool $hideCompanyDetails = false,
-        bool $hideCompanyName = false, bool $hideCompanyAddress = false, bool $hideCompanyTaxNumber = false, bool $hideCompanyPhone = false, bool $hideCompanyEmail = false, bool $hideContactInfo = false,
-        bool $hideContactName = false, bool $hideContactAddress = false, bool $hideContactTaxNumber = false, bool $hideContactPhone = false, bool $hideContactEmail = false,
+        bool $hideCompanyName = false, bool $hideCompanyAddress = false, bool $hideCompanyTaxNumber = false,bool $hideCompanyTaxAddress = false, bool $hideCompanyPhone = false, bool $hideCompanyEmail = false, bool $hideContactInfo = false,
+        bool $hideContactName = false, bool $hideContactAddress = false, bool $hideContactTaxNumber = false,bool $hideContactTaxAddress = false, bool $hideContactPhone = false, bool $hideContactEmail = false,
         bool $hideOrderNumber = false, bool $hideDocumentNumber = false, bool $hideIssuedAt = false, bool $hideDueAt = false,
         string $textDocumentTitle = '', string $textDocumentSubheading = '',
         string $textContactInfo = '', string $textDocumentNumber = '', string $textOrderNumber = '', string $textIssuedAt = '', string $textDueAt = '',
@@ -146,11 +150,13 @@ abstract class DocumentTemplate extends Base
         $this->hideCompanyName = $hideCompanyName;
         $this->hideCompanyAddress = $hideCompanyAddress;
         $this->hideCompanyTaxNumber = $hideCompanyTaxNumber;
+        $this->hideCompanyTaxAddress = $hideCompanyTaxAddress;
         $this->hideCompanyPhone = $hideCompanyPhone;
         $this->hideCompanyEmail = $hideCompanyEmail;
         $this->hideContactInfo = $hideContactInfo;
         $this->hideContactName = $hideContactName;
         $this->hideContactAddress = $hideContactAddress;
+        $this->hideContactTaxAddress = $hideContactTaxAddress;
         $this->hideContactTaxNumber = $hideContactTaxNumber;
         $this->hideContactPhone = $hideContactPhone;
         $this->hideContactEmail = $hideContactEmail;

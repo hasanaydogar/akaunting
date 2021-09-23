@@ -27,6 +27,8 @@
 
                     {{ Form::textGroup('tax_number', trans('general.tax_number'), 'percent', [], setting('company.tax_number')) }}
 
+                    {{ Form::textGroup('tax_address', trans('general.tax_address'),'city',[], setting('company.tax_address') )}}
+
                     {{ Form::textGroup('phone', trans('settings.company.phone'), 'phone', [], setting('company.phone')) }}
 
                     {{ Form::textareaGroup('address', trans('general.address')) }}

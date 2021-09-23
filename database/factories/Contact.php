@@ -33,6 +33,7 @@ class Contact extends Factory
             'email' => $this->faker->unique()->safeEmail,
             'user_id' => null,
             'tax_number' => $this->faker->randomNumber(9),
+            'tax_address' => $this->faker->citySuffix(),
             'phone' => $this->faker->phoneNumber,
             'address' => $this->faker->address,
             'website' => 'https://akaunting.com',

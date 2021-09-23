@@ -48,6 +48,7 @@ class CoreV1 extends Migration
             $table->string('vendor_name');
             $table->string('vendor_email')->nullable();
             $table->string('vendor_tax_number')->nullable();
+            $table->string('vendor_tax_address')->nullable();
             $table->string('vendor_phone')->nullable();
             $table->text('vendor_address')->nullable();
             $table->text('notes')->nullable();
@@ -188,6 +189,7 @@ class CoreV1 extends Migration
             $table->string('customer_name');
             $table->string('customer_email')->nullable();
             $table->string('customer_tax_number')->nullable();
+            $table->string('customer_tax_address')->nullable();
             $table->string('customer_phone')->nullable();
             $table->text('customer_address')->nullable();
             $table->text('notes')->nullable();

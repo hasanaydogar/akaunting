@@ -34,6 +34,7 @@
         hide-company-name="{{ $hideCompanyName }}"
         hide-company-address="{{ $hideCompanyAddress }}"
         hide-company-tax-number="{{ $hideCompanyTaxNumber }}"
+        hide-company-tax-address="{{ $hideCompanyTaxAddress }}"
         hide-company-phone="{{ $hideCompanyPhone }}"
         hide-company-email="{{ $hideCompanyEmail }}"
 
@@ -60,6 +61,7 @@
         hide-contact-name="{{ $hideContactName }}"
         hide-contact-address="{{ $hideContactAddress }}"
         hide-contact-tax-number="{{ $hideContactTaxNumber }}"
+        hide-contact-tax-address="{{ $hideContactTaxAddress }}"
         hide-contact-phone="{{ $hideContactPhone }}"
         hide-contact-email="{{ $hideContactEmail }}"
 

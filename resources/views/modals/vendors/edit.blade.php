@@ -17,6 +17,8 @@
 
         {{ Form::textGroup('tax_number', trans('general.tax_number'), 'percent', []) }}
 
+        {{ Form::textGroup('tax_address', trans('general.tax_address'), 'city', []) }}
+
         {{ Form::selectGroup('currency_code', trans_choice('general.currencies', 1), 'exchange-alt', $currencies, $vendor->currency_code) }}
 
         {{ Form::textareaGroup('address', trans('general.address'), null, $vendor->address) }}

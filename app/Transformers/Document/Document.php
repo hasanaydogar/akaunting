@@ -38,6 +38,7 @@ class Document extends TransformerAbstract
             'contact_name' => $model->contact_name,
             'contact_email' => $model->contact_email,
             'contact_tax_number' => $model->contact_tax_number,
+            'contact_tax_address' => $model->contact_tax_address,
             'contact_phone' => $model->contact_phone,
             'contact_address' => $model->contact_address,
             'notes' => $model->notes,

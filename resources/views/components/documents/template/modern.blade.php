@@ -53,6 +53,14 @@
                     </strong><br><br>
                 @endif
 
+                    @if (!$hideCompanyTaxAddress)
+                        <strong class="text-white">
+                            @if (setting('company.tax_address'))
+                                {{ trans('general.tax_address') }}: {{ setting('company.tax_address') }}
+                            @endif
+                        </strong><br><br>
+                    @endif
+
                 @if (!$hideCompanyPhone)
                     <strong class="text-white">
                         @if (setting('company.phone'))
@@ -102,6 +110,15 @@
                     @endif
                 @endif
             @stack('tax_number_input_end')
+
+            @stack('tax_address_input_start')
+            @if (!$hideContactTaxAddress)
+                @if ($document->contact_tax_address)
+                    {{ trans('general.tax_address') }}: {{ $document->contact_tax_address }}
+                    <br><br>
+                @endif
+            @endif
+            @stack('tax_address_input_end')
 
             @stack('phone_input_start')
                 @if (!$hideContactPhone)

@@ -48,6 +48,9 @@ abstract class TransactionTemplate extends Base
     public $hideCompanyTaxNumber;
 
     /** @var bool */
+    public $hideCompanyTaxAddress;
+
+    /** @var bool */
     public $hideCompanyPhone;
 
     /** @var bool */
@@ -120,6 +123,9 @@ abstract class TransactionTemplate extends Base
     public $hideContactTaxNumber;
 
     /** @var bool */
+    public $hideContactTaxAddress;
+
+    /** @var bool */
     public $hideContactPhone;
 
     /** @var bool */
@@ -171,13 +177,13 @@ abstract class TransactionTemplate extends Base
      */
     public function __construct(
         $type, $transaction, $logo = '', array $payment_methods = [],
-        bool $hideCompany = false, bool $hideCompanyLogo = false, bool $hideCompanyDetails = false, bool $hideCompanyName = false, bool $hideCompanyAddress = false, 
-        bool $hideCompanyTaxNumber = false, bool $hideCompanyPhone = false, bool $hideCompanyEmail = false,
+        bool $hideCompany = false, bool $hideCompanyLogo = false, bool $hideCompanyDetails = false, bool $hideCompanyName = false, bool $hideCompanyAddress = false,
+        bool $hideCompanyTaxNumber = false, bool $hideCompanyTaxAddress = false, bool $hideCompanyPhone = false, bool $hideCompanyEmail = false,
         bool $hideContentTitle = false,bool $hidePaidAt = false, bool $hideAccount = false, bool $hideCategory = false, bool $hidePaymentMethods = false, bool $hideReference = false, bool $hideDescription = false,
         bool $hideAmount = false,
         string $textContentTitle = '', string $textPaidAt = '', string $textAccount = '', string $textCategory = '', string $textPaymentMethods = '', string $textReference = '', string $textDescription = '',
         string $textAmount = '', string $textPaidBy = '',
-        bool $hideContact = false, bool $hideContactInfo = false, bool $hideContactName = false, bool $hideContactAddress = false, bool $hideContactTaxNumber = false,
+        bool $hideContact = false, bool $hideContactInfo = false, bool $hideContactName = false, bool $hideContactAddress = false, bool $hideContactTaxNumber = false, bool $hideContactTaxAddress = false,
         bool $hideContactPhone = false, bool $hideContactEmail = false,
         bool $hideReletad = false, bool $hideReletadDocumentNumber = false, bool $hideReletadContact = false, bool $hideReletadDocumentDate = false, bool $hideReletadDocumentAmount = false, bool $hideReletadAmount = false,
         string $textReleatedTransansaction = '', string $textReleatedDocumentNumber = '', string $textReleatedContact = '', string $textReleatedDocumentDate = '', string $textReleatedDocumentAmount = '', string $textReleatedAmount = '',
@@ -196,6 +202,7 @@ abstract class TransactionTemplate extends Base
         $this->hideCompanyName = $hideCompanyName;
         $this->hideCompanyAddress = $hideCompanyAddress;
         $this->hideCompanyTaxNumber = $hideCompanyTaxNumber;
+        $this->hideCompanyTaxAddress = $hideCompanyTaxAddress;
         $this->hideCompanyPhone = $hideCompanyPhone;
         $this->hideCompanyEmail = $hideCompanyEmail;
 
@@ -226,6 +233,7 @@ abstract class TransactionTemplate extends Base
         $this->hideContactName = $hideContactName;
         $this->hideContactAddress = $hideContactAddress;
         $this->hideContactTaxNumber = $hideContactTaxNumber;
+        $this->hideContactTaxNumber = $hideContactTaxAddress;
         $this->hideContactPhone = $hideContactPhone;
         $this->hideContactEmail = $hideContactEmail;
 

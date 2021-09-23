@@ -10,6 +10,7 @@
     create-new-contact-text="{{ is_array($textCreateNewContact) ? trans($textCreateNewContact[0], ['field' => trans_choice($textCreateNewContact[1], 1)]) : trans($textCreateNewContact) }}"
     edit-contact-text="{{ is_array($textEditContact) ? trans($textEditContact[0], ['field' => trans_choice($textEditContact[1], 1)]) : trans($textEditContact) }}"
     contact-info-text="{{ is_array($textContactInfo) ? trans($textContactInfo[0], ['field' => trans_choice($textContactInfo[1], 1)]) : trans($textContactInfo) }}"
+    tax-address-text="{{ trans('general.tax_address') }}"
     tax-number-text="{{ trans('general.tax_number') }}"
     choose-different-contact-text="{{ is_array($textChooseDifferentContact) ? trans($textChooseDifferentContact[0], ['field' => Str::lower(trans_choice($textChooseDifferentContact[1], 1))]) : trans($textChooseDifferentContact) }}"
     :add-new="{{ json_encode([

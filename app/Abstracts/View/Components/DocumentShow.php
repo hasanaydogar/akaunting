@@ -292,6 +292,8 @@ abstract class DocumentShow extends Base
 
     public $hideCompanyTaxNumber;
 
+    public $hideCompanyTaxAddress;
+
     public $hideCompanyPhone;
 
     public $hideCompanyEmail;
@@ -303,6 +305,8 @@ abstract class DocumentShow extends Base
     public $hideContactAddress;
 
     public $hideContactTaxNumber;
+
+    public $hideContactTaxAddress;
 
     public $hideContactPhone;
 
@@ -390,8 +394,8 @@ abstract class DocumentShow extends Base
         string $textTimelineCreateTitle = '', string $textTimelineCreateMessage = '', string $textTimelineSentTitle = '', string $textTimelineSentStatusDraft = '', string $textTimelineSentStatusMarkSent = '', string $textTimelineSentStatusReceived = '', string $textTimelineSendStatusMail = '',
         string $textTimelineGetPaidTitle = '', string $textTimelineGetPaidStatusAwait = '', string $textTimelineGetPaidStatusPartiallyPaid = '', string $textTimelineGetPaidMarkPaid = '', string $textTimelineGetPaidAddPayment = '',
         bool $hideTimelineCreate = false, bool $hideCompanyLogo = false, bool $hideCompanyDetails = false,
-        bool $hideCompanyName = false, bool $hideCompanyAddress = false, bool $hideCompanyTaxNumber = false, bool $hideCompanyPhone = false, bool $hideCompanyEmail = false, bool $hideContactInfo = false,
-        bool $hideContactName = false, bool $hideContactAddress = false, bool $hideContactTaxNumber = false, bool $hideContactPhone = false, bool $hideContactEmail = false,
+        bool $hideCompanyName = false, bool $hideCompanyAddress = false, bool $hideCompanyTaxNumber = false, bool $hideCompanyTaxAddress = false, bool $hideCompanyPhone = false, bool $hideCompanyEmail = false, bool $hideContactInfo = false,
+        bool $hideContactName = false, bool $hideContactAddress = false, bool $hideContactTaxNumber = false, bool $hideContactTaxAddress = false, bool $hideContactPhone = false, bool $hideContactEmail = false,
         bool $hideOrderNumber = false, bool $hideDocumentNumber = false, bool $hideIssuedAt = false, bool $hideDueAt = false,
         string $textContactInfo = '', string $textDocumentNumber = '', string $textOrderNumber = '', string $textIssuedAt = '', string $textDueAt = '',
         bool $hideItems = false, bool $hideName = false, bool $hideDescription = false, bool $hideQuantity = false, bool $hidePrice = false, bool $hideDiscount = false, bool $hideAmount = false, bool $hideNote = false, bool $hideAttachment = false,
@@ -509,6 +513,7 @@ abstract class DocumentShow extends Base
         $this->hideCompanyName = $hideCompanyName;
         $this->hideContactAddress = $hideContactAddress;
         $this->hideContactTaxNumber = $hideContactTaxNumber;
+        $this->hideContactTaxAddress = $hideContactTaxAddress;
         $this->hideContactPhone = $hideContactPhone;
         $this->hideContactEmail = $hideContactEmail;
         $this->hideOrderNumber = $hideOrderNumber;

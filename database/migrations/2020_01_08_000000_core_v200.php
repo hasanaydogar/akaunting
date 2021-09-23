@@ -27,6 +27,7 @@ class CoreV200 extends Migration
             $table->string('email')->nullable();
             $table->integer('user_id')->nullable();
             $table->string('tax_number')->nullable();
+            $table->string('tax_address')->nullable();
             $table->string('phone')->nullable();
             $table->text('address')->nullable();
             $table->string('website')->nullable();
@@ -46,6 +47,7 @@ class CoreV200 extends Migration
             'vendor_name' => 'contact_name',
             'vendor_email' => 'contact_email',
             'vendor_tax_number' => 'contact_tax_number',
+            'vendor_tax_address' => 'contact_tax_address',
             'vendor_phone' => 'contact_phone',
             'vendor_address' => 'contact_address',
         ];
@@ -68,6 +70,7 @@ class CoreV200 extends Migration
             'customer_name' => 'contact_name',
             'customer_email' => 'contact_email',
             'customer_tax_number' => 'contact_tax_number',
+            'customer_tax_address' => 'contact_tax_address',
             'customer_phone' => 'contact_phone',
             'customer_address' => 'contact_address',
         ];
